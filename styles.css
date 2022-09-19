@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Poppins:wght@300&display=swap');
+body{
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+}
+.footer-layout{
+  position: relative;
+  bottom: 0;
+}

@@ -1,0 +1,17 @@
+.footer{
+  display: flex;
+  justify-content: center;
+  height: 20vh;
+  position:relative;
+  bottom: -113px;
+  background-color: #2E2252;
+
+
+  }
+  .footer-content{
+      position: absolute;
+      top: 30%;
+  }
+  span{
+      color: #fff;
+  }
