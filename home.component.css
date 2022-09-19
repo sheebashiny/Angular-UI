@@ -1,0 +1,14 @@
+h1,p
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+h1{
+  font-family: 'Playfair Display SC', serif;
+  color: rgba(108, 100, 100, 0.558);
+  margin: 10px 0;
+
+}
+

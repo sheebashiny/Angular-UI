@@ -1,0 +1,82 @@
+<h3>User Form</h3>
+<div class="col-10 offset-1 main" >
+  <form name="ngForm" (ngSubmit)="onsubmit()">
+    <div class="row">
+      <div class="col-12 col-sm-6 form-group required">
+        <label for="name">Name</label>
+        <input type="text" [disabled]="loading" [(ngModel)]="contact.Name" name="contact.Name" required="" class="form-control text-input"
+          id="name" placeholder="Name" />
+      </div>
+      <div class="col-12 col-sm-6 form-group required">
+        <label for="email">E-mail</label>
+        <input type="email" [disabled]="loading" [(ngModel)]="contact.Email" name="contact.Email" required=""
+          class="form-control text-input" id="email" placeholder="E-mail" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 form-group required">
+        <label for="subject">Subject</label>
+        <input type="text" [disabled]="loading" [(ngModel)]="contact.Subject" name="contact.Subject" required=""
+          class="form-control text-input" id="subject" placeholder="Subject" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 form-group required">
+        <label for="message">Message</label>
+        <textarea type="text" [disabled]="loading" [(ngModel)]="contact.Message" name="contact.Message" required=""
+          class="form-control" id="message" placeholder="Message..."></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <button type="submit" [disabled]="loading" class="btn btn-success">Send</button>
+      </div>
+    </div>
+  </form>
+  </div>
+
+  <!-- <h3>USER FORM</h3>
+<div class="center">
+    <form novalidate #formRef="ngForm" (ngSubmit)="onSubmit(formRef.value)">
+
+        <div class=" form-group">
+
+            <input type="text" class="form-control" name="firstName" placeholder="Enter First Name" ngModel #firstNameRef="ngModel" required
+                [class.ctrl-error]="firstNameRef.touched &&
+                              firstNameRef?.errors?.required" minlength="3">
+            <div *ngIf="firstNameRef.touched &&
+                           firstNameRef?.errors?.required" class="error-message" style="color: red;">
+               * The first name is required.
+            </div>
+
+
+            <input type="text" class="form-control" name="lastName" placeholder="Enter Last Name" ngModel #lastNameRef="ngModel" required
+            [class.ctrl-error]="firstNameRef.touched &&
+            lastNameRef?.errors?.required" minlength="3">
+            <div *ngIf="lastNameRef.touched &&
+            lastNameRef?.errors?.required" class="error-message" style="color: red;">
+                * The Last name is required.
+                </div>
+
+
+            <input type="email" class="form-control" name="email" placeholder="Enter Email" ngModel #emailRef="ngModel" required
+            [class.ctrl-error]="firstNameRef.touched &&
+            emailRef?.errors?.required" minlength="3">
+            <div *ngIf="emailRef.touched &&
+            emailRef?.errors?.required" class="error-message" style="color: red;">
+                * The Email is required.
+                </div>
+
+
+            <input type="password" class="form-control" name="password"  placeholder="Enter Password" ngModel #passwordRef="ngModel" required
+            [class.ctrl-error]="firstNameRef.touched &&
+            passwordRef?.errors?.required" minlength="3">
+            <div *ngIf="passwordRef.touched &&
+            passwordRef?.errors?.required" class="error-message" style="color: red;">
+                * The Password is required.
+                </div>
+        </div> <br>
+
+        <button type="submit" class="btn btn-success" [disabled]="formRef.invalid">Submit</button>
+    </form>
+</div> -->

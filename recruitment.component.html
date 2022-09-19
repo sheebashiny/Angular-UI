@@ -1,0 +1,77 @@
+<body style="background-color: #E6E6FA;">
+  <div class="container">
+    <form style="padding: 50px;">
+      <div class="mb-3">
+
+          <label for="empname" class="form-label"> Employee Name :</label>
+          <input type="text" class="form-control" id="firstname" aria-describedby="employeename" name="firstname" size="15" />
+      </div>
+
+      <div class="mb-3">
+          <label for="empmidname" class="form-label"> Middlename: </label>
+          <input type="text" class="form-control" id="middlename" name="middlename" size="15" />
+      </div>
+
+      <div class="mb-3">
+          <label for="emplastname" class="form-label"> Lastname: </label>
+          <input type="text" class="form-control" id="lastname" name="lastname" size="15" />
+      </div>
+
+      <div class="mb-3">
+          <label>
+            Designation :
+          </label for="select" class="form-label">
+          <select id="select" class="form-select">
+            <option value="Course">Developer</option>
+            <option value="BCA">Tester</option>
+            <option value="BBA">Project Manager</option>
+            <option value="B.Tech">UI designer</option>
+            <option value="MBA">UX Designer</option>
+            <option value="MCA">Team Lead</option>
+          </select>
+      </div>
+
+        <div class="mb-3">
+          <label for="gender" class="form-label">
+            Gender :
+          </label><br>
+          <input type="radio" name="male" /> Male
+          <input type="radio" name="female" /> Female
+          <input type="radio" name="other" /> Other
+        </div>
+
+        <div class="mb-3">
+          <label for="phone" class="form-label">
+            Phone :
+          </label>
+          <input type="text" class="form-control" name="country code" value="+91" maxlength="10" />
+        </div>
+
+        <div class="mb-3">
+          <label for="myfile" class="form-label">Upload Resume:</label>
+          <input type="file" id="myfile" class="form-control" name="myfile">
+        </div>
+
+        <div class="mb-3">
+          <label for="image" class="form-label">Select Image File:</label>
+          <input type="file" id= "myimage" class= "form-control" name="image" value="Upload">
+          <input type="submit" name="submit" value="Upload" class="form-label mt-2 ">
+        </div>
+
+          <label for="marks" class="form-label"> SSLC MARKS: </label>
+          <input type="text" id="10thmark" class= "form-control" name="10thmark" size="15" />
+
+
+          <label for="marks" class="form-label"> +2 MARKS: </label>
+          <input type="text" id="12thmark" class= "form-control" name="12thmark" size="15" />
+
+
+          <label for="marks" class="form-label"> Degree Marks: </label>
+          <input type="text" id="degreemarks" class= "form-control" name="degreemarks" size="15" />
+
+
+        <button type="submit" click="onclick()" class="btn btn-success mt-3">Send</button><br>
+
+    </form>
+  </div>
+</body>

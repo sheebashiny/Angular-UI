@@ -1,0 +1,21 @@
+.app-logos{
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+  transition: transform .6s;
+  padding: 20px;
+
+  }
+
+  span{
+      padding: 5px;
+      font-size:20px;
+      margin:0%;
+      cursor: pointer;
+
+  }
+  .app-logos:hover{
+      color: orange;
+      transform: scale(1.5)  ;
+  }
